@@ -5,7 +5,7 @@ function Viking (name,health,strength) {
 }
 
 Viking.prototype.doAttack = function (rival) {
-  rival.health -= this.strength;
+  rival.health -= Math.round(Math.random() * 2 * this.strength);
 };
 
 module.exports = Viking;
