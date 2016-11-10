@@ -1,12 +1,13 @@
-var Viking = require('./vikings.js');
+var Warrior = require('./warriors.js');
+var Viking = require('./warriors.js');
+// var Viking = require('./vikings.js');
 var Pit = require('./pit.js');
 
-var ragnar = new Viking('Ragnar', 100, 10);
-var floki = new Viking('Flokki', 80, 8);
+var ragnar = new Viking(100, 10, 'Ragnar');
+var floki = new Viking(80, 8, 'Flokki');
 
-// console.log(floki.health);
-// ragnar.doAttack(floki);
-// console.log(floki.health);
+console.log(ragnar);
+console.log(floki);
 
 var pit = new Pit(ragnar,floki,10);
 
